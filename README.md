@@ -5,7 +5,7 @@ Este proyecto busca incrementar la tranquilidad de los cuidadores mediante el us
 "Implementación del Login en el Proyecto Seguridad Infantil”
 
 Introducción
-El módulo de autenticación y control de acceso se desarrolló utilizando Spring Boot para el backend, Spring Security para la gestión de credenciales y roles de usuario, y Thymeleaf para la interfaz visual.
+El módulo de autenticación y control de acceso se desarrolló utilizando Spring Boot para el backend, Spring Security para  usuario, y Thymeleaf para la interfaz visual.
 Este módulo forma parte esencial del sistema de Seguridad Infantil, permitiendo que solo usuarios autorizados (administradores o cuidadores) accedan a las funcionalidades del sistema de monitoreo infantil, registro de menores y control de geocercas.
 
 CONFIGURACIÓN DEL PROYECTO: 
