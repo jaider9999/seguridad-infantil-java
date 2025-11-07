@@ -1,4 +1,8 @@
 # seguridad-infantil-java
+ESTUDIANTE: ZIRLEY YULIANA ACEVEDO PÉREZ
+JAIDER DAVID RESTREPO PONTON
+
+
 La seguridad infantil es una de las principales preocupaciones de padres y cuidadores en la actualidad. Muchos menores están expuestos a riesgos al desplazarse entre su hogar, la escuela y otros espacios públicos.  
 Este proyecto busca incrementar la tranquilidad de los cuidadores mediante el uso de tecnologías de geolocalización
 
@@ -40,3 +44,6 @@ FUNCIONAMIENTO GENERAL
 Cuando un usuario se registra, su contraseña se cifra antes de almacenarse. Al iniciar sesión, Spring Security compara la contraseña ingresada con la versión encriptada en la base de datos. Solo los usuarios autenticados pueden acceder a las páginas protegidas; los no autenticados son redirigidos al formulario de login.
 
 Conclusión  El módulo de login garantiza que los datos del sistema de Seguridad Infantil estén protegidos y solo sean accesibles por usuarios verificados. La combinación de Spring Boot, Spring Security y Thymeleaf proporciona una arquitectura segura, escalable y mantenible, alineada con los objetivos del proyecto de monitoreo y protección infantil.
+
+DERECHOS DE AUTOR: 
+ZIRLEY YULIANA ACEVEDO PÉREZ Y JAIDER DAVID RESTREPO PONTON 2025
