@@ -11,10 +11,10 @@ Este módulo forma parte esencial del sistema de Seguridad Infantil, permitiendo
 CONFIGURACIÓN DEL PROYECTO: 
 El proyecto se generó como una aplicación de Spring Boot con las dependencias: Web, Thymeleaf, Spring Security, Spring Data JPA y el conector MySQL. Esto permite manejar el backend, la lógica de seguridad, la persistencia de datos y las vistas HTML dinámicas.
 
-CONFIGURACIÓN DE LA BASE DE DATOS
+CONFIGURACIÓN DE LA BASE DE DATOS:
 El login se integró con la base de datos PostgreSQL del proyecto, la cual también almacena la información de usuarios, menores, dispositivos GPS y geocercas mediante el archivo application.properties, donde se definieron el nombre de la base de datos, usuario, contraseña, y el dialecto de Hibernate. Spring Boot se encargó de crear las tablas automáticamente gracias a la propiedad spring.jpa.hibernate.ddl-auto=update.
 
-CREACIÓN DE LA ENTIDAD USER 
+CREACIÓN DE LA ENTIDAD USER :
 Se diseñó una clase AppUser con los atributos: id, username, password, role y enabled. Esta entidad fue mapeada a la tabla users mediante la anotación @Entity para almacenar los datos de cada usuario en MySQL.
 Configuración del Proyecto
 Se agregaron las dependencias en el pom.xml para incluir:
@@ -24,16 +24,16 @@ spring-boot-starter-thymeleaf
 spring-boot-starter-data-jpa
 org.postgresql:postgresql
 
-REPOSITORIO Y SERVICIO DE USUARIOS
+REPOSITORIO Y SERVICIO DE USUARIOS:
  El repositorio (UserRepository) extendió JpaRepository para acceder fácilmente a los datos. El servicio (UserService) se encargó de registrar nuevos usuarios, encriptar sus contraseñas con BCryptPasswordEncoder y guardar los registros en la base de datos.
  
-IMPLEMENTACIÓN DE SPRING SECURITY
+IMPLEMENTACIÓN DE SPRING SECURITY:
  Se creó una clase CustomUserDetailsService que implementa UserDetailsService para adaptar los datos de la base de datos a la estructura que Spring Security utiliza para autenticar usuarios. Además, en SecurityConfig se definió el SecurityFilterChain con las rutas públicas y protegidas, y se configuró el login personalizado con Thymeleaf.
 
- CONTROLADOR DE AUTENTICACIÓN 
+ CONTROLADOR DE AUTENTICACIÓN :
 El controlador (AuthController) gestiona las rutas /login, /register y /. Permite mostrar los formularios de inicio de sesión y registro, registrar nuevos usuarios y redirigir a la página principal tras un login exitoso.
 
-PLANTILLAS THYMELEAF 
+PLANTILLAS THYMELEAF :
 Se crearon tres plantillas principales: - login.html: formulario de inicio de sesión. - register.html: formulario para registrar nuevos usuarios. - index.html: página principal mostrada después de iniciar sesión. Estas vistas utilizan expresiones Thymeleaf para interactuar con los datos del backend y con el modelo del controlador.
 
 FUNCIONAMIENTO GENERAL 
